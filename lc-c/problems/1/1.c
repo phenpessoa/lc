@@ -20,12 +20,16 @@ int *twoSum(int *nums, int numsSize, int target, int *returnSize)
         const int *v = IHM_get(m, n);
         if (v)
         {
+            int first = *v;
             *returnSize = 2;
+
+            IHM_free(m);
+
             int *out = (int *)malloc(sizeof(int) * 2);
             if (!out)
                 return NULL;
 
-            out[0] = *v;
+            out[0] = first;
             out[1] = i;
 
             return out;
@@ -91,6 +95,7 @@ bool test_1()
         return false;
     }
 
+    free(res);
     return true;
 }
 
@@ -117,6 +122,7 @@ bool test_2()
         return false;
     }
 
+    free(res);
     return true;
 }
 
@@ -143,5 +149,6 @@ bool test_3()
         return false;
     }
 
+    free(res);
     return true;
 }
