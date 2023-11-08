@@ -1,0 +1,16 @@
+goos: windows
+goarch: amd64
+pkg: lc-go/387
+cpu: Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz
+BenchmarkOne_SmallRepeating-16            922750              1284 ns/op               0 B/op          0 allocs/op
+BenchmarkOne_SmallNonRepeating-16         962924              1253 ns/op               0 B/op          0 allocs/op
+BenchmarkOne_LargeRepeating-16                32          36971170 ns/op               0 B/op          0 allocs/op
+BenchmarkOne_LargeNonRepeating-16             32          36114676 ns/op               0 B/op          0 allocs/op
+BenchmarkTwo_SmallRepeating-16            610476              1899 ns/op             900 B/op          1 allocs/op
+BenchmarkTwo_SmallNonRepeating-16         608967              1975 ns/op             900 B/op          1 allocs/op
+BenchmarkTwo_LargeRepeating-16                86          15702612 ns/op             900 B/op          1 allocs/op
+BenchmarkTwo_LargeNonRepeating-16             80          15966926 ns/op             900 B/op          1 allocs/op
+BenchmarkThree_SmallRepeating-16        11625202             104.3 ns/op               0 B/op          0 allocs/op
+BenchmarkThree_SmallNonRepeating-16     11273483             105.0 ns/op               0 B/op          0 allocs/op
+BenchmarkThree_LargeRepeating-16             619           1954212 ns/op               0 B/op          0 allocs/op
+BenchmarkThree_LargeNonRepeating-16          614           1955391 ns/op               0 B/op          0 allocs/op6
